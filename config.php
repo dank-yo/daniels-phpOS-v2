@@ -40,12 +40,12 @@ function inject_heading($string, $path="img/logo/fav-icon-dark-32.ico"){
 
 function set_home($path=""){
     //Home Directory
-    echo "<base href='http://localhost/webOS/" . $path . "'>";
+    echo "<base href='http://localhost/daniels-phpOS-v2/" . $path . "'>";
 }
 
 function inject_css($path="css/default.css"){
     // default style sheet included
-    echo "<link rel='stylesheet' href='http://localhost/webOS/".$path."'>";
+    echo "<link rel='stylesheet' href='http://localhost/daniels-phpOS-v2/".$path."'>";
 }
 
 function inject_app_css($path){
