@@ -1,0 +1,326 @@
+@font-face {
+	src: url("font/SF Pro Display.ttf") format("truetype");
+	font-family: 'SF Pro Display, Regular';
+	font-weight: normal;
+    font-style: normal;
+	font-size: 30;
+}
+
+*, html, body, p, div{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'SF Pro Display';
+}
+
+html{
+    height:100%;
+    background: url("../img/background/default_bg.jpg");
+    background-color: none;
+    background-size: cover;
+    background-position: center;
+    font-family: 'SF Pro Display, Regular';
+}
+
+body{
+    margin:0%; 
+    padding:0%; 
+    height:100%;
+    background: none;
+    font-family: 'SF Pro Display';
+}
+
+iframe{
+    margin: 0px; padding: 0px;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-scroll{
+    overflow: scroll;
+}
+
+.navbar{
+    padding: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shell-theme{
+    --bs-bg-opacity: 1;
+    background-color: rgba(0,0,0,.7);
+    color: hsl(0, 0%, 59%);
+}
+
+.shell-button{
+    margin: 0px; padding: 8px;
+    --bs-bg-opacity: 1;
+    background-color: rgba(20,20,30,1);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.shell-dropdown-button{
+    width:32px; height: 32px;
+    margin: 4px; padding: 4px;
+}
+
+.shell-button:hover{
+    border-radius: 50%;
+    --bs-bg-opacity: 1;
+    background-color: rgba(50,50,50,.7);
+    color: rgba(#a9a9a9);
+}
+
+.shell-text{
+    color: rgba(150, 150, 150,1);
+}
+
+.navbar-wrapper{
+    margin : 0px; 
+    padding: 0px;
+    padding-left: 4px;
+    position: absolute;
+    animation-name: navbar-slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+/* This is the keyframes for the navbar animation */
+@keyframes navbar-slide {
+    0%   {top:-40px;}
+    25%  {top:-30px;}
+    50%  {top:-20px;}
+    75%  {top:-10px;}
+    100% {top:0px;}
+}
+
+.dropdown-menu{
+    margin: 0px; 
+    padding: 0px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdown-user-information{height: 100%;}
+.dropdown-user-avatar{margin: 2px; padding: 2px; width: 64px; height: 64px;}
+.dropdown-avatar-img{width: 100%; border-radius: 50%; margin: -0px; padding: 0px;}
+.dropdown-button-list{margin: 2px; padding: 2px; list-style: none;}
+
+
+.dock-wrapper{
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px;
+    position: relative;
+    animation-name: dock-wrapper-slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes dock-wrapper-slide {
+    0%   {left:-100px;}
+    25%  {left:-75px;}
+    50%  {left:-50px;}
+    75%  {left:-25px;}
+    100% {left:0px;}
+}
+
+.dock{
+    margin: 0px; padding: 0px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dock-items{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.dock-indicator{width: 1px; height: 4px;}
+.dock-icon{margin: 0px; padding: 0px;}
+.dock-icon:hover{
+    animation-name: icon-hover;
+    transition: ease-in-out 100ms;
+    opacity: 50%;
+}
+
+.desktop-wrapper{width: 100%; height: 100%; padding-top: 26px;}
+
+.window-wrapper{
+    margin: 0px; padding: 0px;
+    animation-name: window-wrapper-open;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    border-radius: 10px 10px 10px 10px;
+}
+
+@keyframes window-wrapper-open{
+    0% {transform: (.6);}
+    25%  {transform: (.7);}
+    50%  {transform: (.8);}
+    75%  {transform: (.9);}
+    100% {transform: (1);}
+}
+
+.window-titlebar-wrapper{
+    width: 100%; height: 26px; 
+    cursor: move;
+    background-color: rgba(10,10,10,1); 
+    border-bottom: 1px solid rgba(8,8,8,1);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.window-titlebar-nav{
+    display: inline;
+}
+
+.window-titlebar-text{
+    text-align: center;
+}
+
+.window-frame-wrapper{
+    margin:0px; padding: 0px;
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.2), 0 46px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.window-titlebar-wrapper{
+    margin: 0px; padding: 0px;
+    width: 100%;
+    display: inline;
+}
+
+.titlebar-buttons{
+    margin: 1px; padding: 1px;
+    width: 100%;
+    display: block;
+}
+
+.titlebar-button{
+    margin: 2px; padding: 2px;
+    border-radius: 50%;
+    width: 16px; height: 16px;
+}
+
+.button-close{
+    width: 16px; height: 16px;
+    background-image: linear-gradient(0deg, #FF6666, #FF9999);
+    border: 1px solid black;
+}
+.button-close:hover{
+    background-image: linear-gradient(0deg, #FF9999, #FFCCCC);
+    border: 1px solid black;
+}
+
+.button-minimize{
+    width: 16px; height: 16px;
+    background-image: linear-gradient(0deg, #FFFF66, #FFFF99);
+    border: 1px solid black;
+}
+
+.button-minimize:hover{
+    background-image: linear-gradient(0deg, #FFFFAA, #FFFFDD);
+    border: 1px solid black;
+}
+
+.button-maximize{
+    width: 16px; height: 16px;
+    background-image: linear-gradient(0deg, #88DDFF, #88FFFF);
+    border: 1px solid black;
+}
+
+.button-maximize:hover{
+    background-image: linear-gradient(0deg, #AAFFFF, #DDFFFF);
+    border: 1px solid black;
+}
+
+.titlebar-text{
+    margin: 0px; padding: 0px;
+    width: 100%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+
+header{
+	width: 100%;
+}
+
+/*Login and Register Window*/
+
+.container-center{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+}
+
+.login-pane{
+    width: 360px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    color: rgba(150, 150, 150,1);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #000000;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4), 0 36px 60px 0 rgba(0,0,0,0.4);
+}
+
+.login-button{
+    background-color: #000000;
+    border: 1px solid black;
+    color: #808080;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-button:hover{
+    color: #202020;
+    background-color: #00FFFF;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+
+input[type=text] {
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}
+input[type=password] {
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}
+
+
+
