@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 require('../../../config.php');
 
 function findAllUsers(){
@@ -25,8 +23,9 @@ function findAllUsers(){
 
 if (empty($_POST['user'])) {
     $tmp = findAllUsers(); 
+    echo "";
     foreach ($tmp as $row) {
-        echo $row['username'];
+        echo '' . $row['username'] ;
     }
 }
 

@@ -22,6 +22,7 @@ table, tr{
 }
 
 .search-function{
+    vertical-align: middle;
     text-align: right;
     width: 75%;
 }
@@ -33,12 +34,17 @@ width: 10px;
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: #f1f1f1;
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
 background: #888;
+width: 2px;
 }
 
 /* Handle on hover */
@@ -61,3 +67,4 @@ display: flex;
     width: 40px;
     height: 40px; 
 }
+
